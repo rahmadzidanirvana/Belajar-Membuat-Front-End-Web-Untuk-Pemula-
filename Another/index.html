@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bookshelf Apps</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">      
+    </head>
+    <body>
+        <header>
+            <div class="container header">
+                <div id="header-logo">
+                    <a href="#">BOOKSHELF</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="top-wrapper">
+                <div class="container">
+                    <div class="caraousel">
+                        <div class="caraousel-text">
+                            <div class="caraousel-text-content">
+                                <h1>Buku & Jendela Dunia</h2>
+                                <p>Buku dapat menjadi teman belajar, teman bermain, teman sedih, teman gembira, teman minum teh, teman dengerin musik, dll. Buku merupakan teman yang baik. Dia selalu ada di segala situasi. Dia selalu ada disaat kita butuh informasi. Dia selalu ada disaat kita butuh ilmu.</p>
+                            </div>
+                        </div>
+                        <div class="caraousel-images">
+                            <div class="c-images caraousel-images-1">
+                                <img src="images/book1.svg" alt="">
+                            </div>
+                            <div class="c-images caraousel-images-2">
+                                <img src="images/book2.svg" alt="">
+                            </div>
+                            <div class="c-images caraousel-images-3">
+                                <img src="images/book3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="bookshelf">
+                    <div class="bookshelf-row">
+                        <div class="bookshelf-column satu">
+                            <section class="input_section">
+                                <h2>Masukkan Buku Baru</h2>
+                                <form id="inputBook">
+                                    <div class="input">
+                                        <label for="inputBookTitle">Judul</label>
+                                        <input id="inputBookTitle" type="text" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="inputBookAuthor">Penulis</label>
+                                        <input id="inputBookAuthor" type="text" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="inputBookYear">Tahun</label>
+                                        <input id="inputBookYear" type="number" required>
+                                    </div>
+                                    <div class="input_inline">
+                                        <label for="inputBookIsComplete">Selesai dibaca</label>
+                                        <input id="inputBookIsComplete" type="checkbox">
+                                    </div>
+                                    <input id="bookSubmit" type="submit" value="Masukkan Buku ke RAK"></input>
+                                </form>
+                            </section>
+                        </div>
+                        <div class="bookshelf-column dua">
+                            <section class="search_section">
+                                <h2>Cari Buku</h2>
+                                <form id="searchBook">
+                                    <label for="searchBookTitle">Judul</label>
+                                    <input id="searchBookTitle" type="text" placeholder="Case Sensitive! Isikan Judul Dengan Benar...">
+                                    <input id="searchSubmit" type="submit" value="Cari"></input>
+                                </form>
+                            </section>
+                            <section class="informasi_section">
+                                <h2>RAK BUKU</h2>
+                                <div class="informasi-buku">
+                                    <div class="box total">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-book"></i>
+                                        </div>
+                                        <div class="title">BUKU</div>
+                                        <div class="numberTotal"></div>
+                                    </div>
+                                    <div class="box selesai">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-square-check"></i>
+                                        </div>
+                                        <div class="title">Selesai Dibaca</div>
+                                        <div class="numberSelesai"></div>
+                                    </div>
+                                    <div class="box belum">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-square-xmark"></i>
+                                        </div>
+                                        <div class="title">Belum Dibaca</div>
+                                        <div class="numberBelum"></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="bookshelf-row">
+                        <section class="section_rak belum-selesai">
+                            <h2>Belum Selesai Dibaca</h2>
+                            <div id="incompleteBookshelfList" class="book_list">
+
+                            </div>                           
+                        </section>
+                        <section class="section_rak sudah-selesai">
+                            <h2>Sudah Selesai Dibaca</h2>
+                            <div id="completeBookshelfList" class="book_list">
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <p>&copy; 2022 DONGAN | Belajar Membuat Front-End Web untuk Pemula</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

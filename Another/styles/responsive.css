@@ -1,0 +1,105 @@
+@media screen and (max-width: 1000px) {
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #header-logo a{
+        font-size: 1.7em;
+    }
+
+    #top-wrapper{
+        padding-top: 100px;
+    }
+
+    .caraousel{
+        flex-direction: column-reverse;
+    }
+
+    .caraousel-text{
+        flex-basis: 100%;
+    }
+    .caraousel-images{
+        flex-basis: 100%;
+    }
+
+    .caraousel-images-1{
+        width: 220px;
+        height: 330px;
+    }
+    
+    .caraousel-images-2{
+        width: 150px;
+        height: 250px;
+    }
+    
+    .caraousel-images-3{
+        width: 110px;
+        height: 210px;
+    }
+
+    .book_item{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+
+    #top-wrapper{
+        padding-top: 0;
+    }
+
+    .input_section{
+        margin-bottom: 20px;
+    }
+    .bookshelf-row{
+        flex-direction: column;
+    }
+
+    .caraousel-text h1{
+        font-size: 2em;
+    }
+
+    .informasi_section{
+        flex-direction: column;
+    }
+
+    .book_item{
+        display: block;
+        width: 100%;
+    }
+
+    .c-images{
+        margin: 0 -20px;
+    }
+
+    .caraousel-images-1{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .caraousel-images-2{
+        width: 130px;
+        height: 170px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .caraousel-images-2:hover{
+        z-index: 3;
+    }
+    
+    .caraousel-images-3{
+        width: 90px;
+        height: 130px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .caraousel-images-3:hover{
+        z-index: 3;
+    }
+}
